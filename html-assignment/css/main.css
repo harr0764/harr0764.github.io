@@ -6,7 +6,7 @@ header, footer {
     background-color: lightpink;
 }
 .site-title {
-    color: plum;
+    color: darkorchid;
 }
 #my-image {
     box-shadow: 0 0 2px 1px black;
@@ -16,4 +16,16 @@ header, footer {
 }
 .hobbies li:nth-child(odd) {
     background-color: lightblue;
+}
+a {
+    text-decoration: none;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid lightsalmon;
+    padding: 5px 10px;
+    color: palevioletred;
+    transition: background-color 0.3s;
+}
+a:hover,
+a:focus {
+    background-color: lightgreen;
 }
