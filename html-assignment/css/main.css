@@ -1,0 +1,16 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+header, footer {
+    background-color: lightpink;
+}
+.site-title {
+    color: plum;
+}
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+.hobbies {
+    list-style-type: square;
+}
