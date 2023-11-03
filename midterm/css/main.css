@@ -1,55 +1,70 @@
 /* Reset and base styles */
 body {
     margin-bottom: 10px;
-    padding: 0;
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Main container */
-.wrapper {
+.wrapper-main {
     background-color: #d4e3e1;
-    margin: 0px 250px 0px 250px;
+    margin: 0 250px;
     position: relative;
     z-index: 1;
-    padding: 0px 20px 60px 20px;
+    padding: 0 10px 60px 10px;
+}
+
+.wrapper-image {
+    background-color: #d4e3e1;
+    margin: 0 250px;
+    position: relative;
+    z-index: 1;
+    padding: 0; /* No padding for the image wrapper */
 }
 
 /* Header overlay text */
-.overlay-text {
+
+.header {
+    position: relative;
+    text-align: center;
+}
+.title-overlay-text {
     position: absolute;
-    top: 225px;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 50px;
-}
-
-.header {
-    padding: 0;
-    margin-left: 0;
+    font-size: 3.5vw;
 }
 
 /* Text size styles */
-.large-text {
+.extra-large-text {
+    font-size: 25px;
+}
+h2.extra-large-text {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3.large-text {
     font-size: 22px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 h4.large-text {
     font-size: 22px;
     margin-bottom: 20px;
-}
-
-.extra-large-text {
-    font-size: 25px;
-}
-
-h2.extra-large-text {
     padding-top: 20px;
-    margin-bottom: 20px;
-  }
+}
 
+h5.large-text {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.visit label, input {
+    padding-left: 2px;
+}
 /* Navigation styles */
 nav {
     margin-top: 20px;
@@ -64,31 +79,55 @@ nav ul {
 }
 
 nav ul li {
-    display: inline; 
-    margin: 0px 20px; 
+    display: inline;
+    margin: 0 20;
+    position: relative;
+}
+
+/* Center the text in the navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for the menu items */
+nav ul li {
+    display: inline;
+    margin: 0 120px;
     position: relative;
 }
 
 nav ul li a {
-    font-weight: darker;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
-    color: black; 
-  }
+    color: black;
+    position: relative;
+}
 
-  nav ul li::before {
+/* Add vertical bars between menu items */
+nav ul li::before {
     content: '';
-    border-left: 1px solid black; /* Adjust border properties as needed */
-    height: 2em; /* Adjust height as needed */
+    border-left: 2px solid black;
+    height: 3em; /* Adjust the height as needed */
     position: absolute;
-    left: -132px; /* Adjust the position as needed */
-    top: -5px;;
-  }
-  
-  /* Hide the left border on the first item */
-  nav ul li:first-child::before {
+    left: -120px; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hide the left border on the first menu item */
+nav ul li:first-child::before {
     display: none;
-  }
+}
+
+
+/* Hide the left border on the first item */
+nav ul li:first-child::before {
+    display: none;
+}
 
 /* Form styles */
 form {
@@ -96,13 +135,9 @@ form {
 }
 
 form label,
-form input,
 form textarea,
-form h2,
 form button {
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 form textarea {
@@ -127,7 +162,7 @@ form textarea {
 
 form button {
     background-color: transparent;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px 15px;
     margin-left: 20px;
 }
@@ -136,7 +171,7 @@ form button {
 #lone-starfish-wide {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -150,7 +185,7 @@ form button {
 .boxmodel ul {
     list-style-type: disc;
     margin-left: 20px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 /* Floating image styles */
