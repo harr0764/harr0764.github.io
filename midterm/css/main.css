@@ -11,7 +11,6 @@ body {
     margin: 0 250px;
     position: relative;
     z-index: 1;
-    padding: 0; /* No padding for the image wrapper */
 }
 #lone-starfish-wide {
     display: block;
@@ -165,7 +164,7 @@ form button {
 /* footer */
 footer {
     position: absolute;
-    bottom: 5;
+    bottom: 5px;
     right: 0;
     padding: 20px;
     padding-right: 40px;
