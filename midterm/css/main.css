@@ -1,19 +1,11 @@
-/* Reset and base styles */
+/* body */
 body {
     margin-bottom: 10px;
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Main container */
-.wrapper-main {
-    background-color: #d4e3e1;
-    margin: 0 250px;
-    position: relative;
-    z-index: 1;
-    padding: 0 10px 60px 10px;
-}
-
+/* header */
 .wrapper-image {
     background-color: #d4e3e1;
     margin: 0 250px;
@@ -21,9 +13,12 @@ body {
     z-index: 1;
     padding: 0; /* No padding for the image wrapper */
 }
-
-/* Header overlay text */
-
+#lone-starfish-wide {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
 .header {
     position: relative;
     text-align: center;
@@ -37,69 +32,24 @@ body {
     font-size: 3.5vw;
 }
 
-/* Text size styles */
-.extra-large-text {
-    font-size: 25px;
-}
-h2.extra-large-text {
-    padding-top: 20px;
-    margin-bottom: 20px;
-}
-
-h3.large-text {
-    font-size: 22px;
-    padding-top: 30px;
-}
-
-h4.large-text {
-    font-size: 22px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
-h5.large-text {
-    font-size: 20px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-}
-.visit label, input {
-    padding-left: 2px;
-}
-/* Navigation styles */
+/* nav */
 nav {
     margin-top: 20px;
     text-align: center;
 }
-
 nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
     text-align: center;
     display: flex;
     justify-content: space-around;
-    padding: 0;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 20;
-    position: relative;
-}
-
-/* Center the text in the navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-}
-
-/* Style for the menu items */
 nav ul li {
     display: inline;
     margin: 0 120px;
     position: relative;
 }
-
 nav ul li a {
     font-size: 25px;
     text-decoration: none;
@@ -107,7 +57,7 @@ nav ul li a {
     position: relative;
 }
 
-/* Add vertical bars between menu items */
+/* the bars between the menu items */
 nav ul li::before {
     content: '';
     border-left: 2px solid black;
@@ -117,78 +67,35 @@ nav ul li::before {
     top: 50%;
     transform: translateY(-50%);
 }
-
-/* Hide the left border on the first menu item */
 nav ul li:first-child::before {
     display: none;
 }
 
-
-/* Hide the left border on the first item */
-nav ul li:first-child::before {
-    display: none;
+/* main container */
+.wrapper-main {
+    background-color: #d4e3e1;
+    margin: 0 250px;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px 60px 10px;
 }
 
-/* Form styles */
-form {
-    border: solid black;
+/* life of a starfish */
+h2.extra-large-text {
+    font-size: 25px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
-
-form label,
-form textarea,
-form button {
-    margin: 10px;
-}
-
-form textarea {
-    width: 98%;
-    box-sizing: border-box;
-}
-
-/* Box text padding */
-.boxtext {
-    display: block;
-    padding: 15px 10px 10px 10px;
-}
-
-.visit {
-    display: inline-block;
-    padding-left: 10px;
-}
-
-.visit input[type="radio"] {
-    display: inline-block;
-}
-
-form button {
-    background-color: transparent;
-    border: 2px solid black;
-    padding: 10px 15px;
-    margin-left: 20px;
-}
-
-/* Wide image styles */
-#lone-starfish-wide {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-}
-
-/* Starfish image styles */
 #lone-starfish {
     width: 200px;
     height: auto;
 }
 
-/* List styles for Facts About Starfish */
-.boxmodel ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-top: 20px;
+/* Facts About Starfish */
+h3.large-text {
+    font-size: 22px;
+    padding-top: 30px;
 }
-
-/* Floating image styles */
 .float img {
     width: 200px;
     height: auto;
@@ -196,15 +103,66 @@ form button {
     margin-right: 20px;
     margin-bottom: 10px;
 }
-
-/* Clearfix for floating elements */
 clearfix::after {
     content: "";
     display: block;
     clear: both;
 }
+.boxmodel ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 
-/* Footer styles */
+/* contact to learn more */
+h4.large-text {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* form */
+form {
+    border: solid black;
+}
+form label,
+form textarea,
+form button {
+    margin: 10px;
+}
+form textarea {
+    width: 98%;
+    box-sizing: border-box;
+}
+
+/* would you like to visit the starfish */
+h5.large-text {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.boxtext {
+    display: block;
+    padding: 15px 10px 10px 10px;
+}
+.visit {
+    display: inline-block;
+    padding-left: 10px;
+}
+.visit input[type="radio"] {
+    display: inline-block;
+}
+.visit label, input {
+    padding-left: 2px;
+}
+form button {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+
+/* footer */
 footer {
     position: absolute;
     bottom: 5;
