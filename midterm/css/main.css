@@ -1,0 +1,179 @@
+/* Reset and base styles */
+body {
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main container */
+.wrapper {
+    background-color: #d4e3e1;
+    margin: 0px 250px 0px 250px;
+    position: relative;
+    z-index: 1;
+    padding: 0px 20px 60px 20px;
+}
+
+/* Header overlay text */
+.overlay-text {
+    position: absolute;
+    top: 225px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+.header {
+    padding: 0;
+    margin-left: 0;
+}
+
+/* Text size styles */
+.large-text {
+    font-size: 22px;
+    padding-top: 50px;
+}
+
+h4.large-text {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.extra-large-text {
+    font-size: 25px;
+}
+
+h2.extra-large-text {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+/* Navigation styles */
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0px 20px; 
+    position: relative;
+}
+
+nav ul li a {
+    font-weight: darker;
+    font-size: 20px;
+    text-decoration: none;
+    color: black; 
+  }
+
+  nav ul li::before {
+    content: '';
+    border-left: 1px solid black; /* Adjust border properties as needed */
+    height: 2em; /* Adjust height as needed */
+    position: absolute;
+    left: -132px; /* Adjust the position as needed */
+    top: -5px;;
+  }
+  
+  /* Hide the left border on the first item */
+  nav ul li:first-child::before {
+    display: none;
+  }
+
+/* Form styles */
+form {
+    border: solid black;
+}
+
+form label,
+form input,
+form textarea,
+form h2,
+form button {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+form textarea {
+    width: 98%;
+    box-sizing: border-box;
+}
+
+/* Box text padding */
+.boxtext {
+    display: block;
+    padding: 15px 10px 10px 10px;
+}
+
+.visit {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.visit input[type="radio"] {
+    display: inline-block;
+}
+
+form button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+
+/* Wide image styles */
+#lone-starfish-wide {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Starfish image styles */
+#lone-starfish {
+    width: 200px;
+    height: auto;
+}
+
+/* List styles for Facts About Starfish */
+.boxmodel ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 20px; 
+}
+
+/* Floating image styles */
+.float img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Clearfix for floating elements */
+clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer styles */
+footer {
+    position: absolute;
+    bottom: 5;
+    right: 0;
+    padding: 20px;
+    padding-right: 40px;
+}
